@@ -1,0 +1,138 @@
+:root {
+  --playfair: "Playfair Display", serif;
+  --Quicksand: "Quicksand", sans-serif;
+  --Roboto: "Roboto", sans-serif;
+  --dark: #3c393d;
+  --exDark: #2b2b2b;
+}
+body {
+  margin: 0px;
+}
+.container {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+}
+.header {
+  background-color: #3c393d;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.brand {
+  color: #fff;
+  display: block;
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+  font-family: var(--playfair);
+  letter-spacing: 1px;
+}
+.navbar {
+  text-align: center;
+  word-spacing: 30px;
+}
+.navbar a {
+  text-transform: uppercase;
+  font-family: var(--Roboto);
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 1px;
+  align-items: center;
+  letter-spacing: 3px;
+  padding-bottom: 5px;
+  transition: opacity 0.5s ease;
+}
+.navbar a:hover {
+  color: red;
+}
+.contents {
+  color: var(--dark);
+  align-items: center;
+  padding-top: 20px;
+}
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border-bottom: 1px rgba(0, 0, 0, 0.5);
+}
+.blog-box {
+  width: 360px;
+  background-color: #ffffff;
+  border: 1px solid green;
+  margin: 20px;
+}
+.blog-img {
+  width: 100%;
+  height: auto;
+}
+.blog-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+.blog-text {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+.blog-text span {
+  font-size: 0.9rem;
+}
+.blog-text .blog-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: green;
+  text-decoration: none;
+}
+.blog-text .blog-title:hover {
+  transition: all ease 0.3s;
+  text-decoration: underline;
+}
+.blog-text p {
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0px;
+}
+.blog-text a {
+  text-decoration: none;
+  color: black;
+}
+.blog-text a:hover {
+  text-decoration: underline;
+}
+.footer {
+  background-color: #3c393d;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.social {
+  color: #fff;
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+}
+.social .text {
+  font-size: 1rem;
+}
+.copyright {
+  text-align: right;
+  color: aliceblue;
+  font-size: 0.8rem;
+  padding-right: 5px;
+}
